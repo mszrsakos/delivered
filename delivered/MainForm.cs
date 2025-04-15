@@ -22,12 +22,12 @@ namespace delivered
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            Form1 form1=new Form1();
-            form1.Dock = DockStyle.Fill;
-            form1.TopLevel=false;
+            Form5 form5=new Form5();
+            form5.Dock = DockStyle.Fill;
+            form5.TopLevel=false;
             panel1.Controls.Clear();
-            panel1.Controls.Add(form1);
-            form1.Show();
+            panel1.Controls.Add(form5);
+            form5.Show();
 
         }
     }

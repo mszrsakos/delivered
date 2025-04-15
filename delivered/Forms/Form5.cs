@@ -10,14 +10,16 @@ using System.Windows.Forms;
 
 namespace delivered.Forms
 {
-    public partial class Form2 : Form
+    public partial class Form5 : Form
     {
-        public Form2()
+        public Form5()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             Form1 form1 = new Form1();
             form1.Dock = DockStyle.Fill;
@@ -27,9 +29,7 @@ namespace delivered.Forms
             form1.Show();
         }
 
-
-
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
             form2.Dock = DockStyle.Fill;
@@ -39,7 +39,7 @@ namespace delivered.Forms
             form2.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             Form3 form3 = new Form3();
             form3.Dock = DockStyle.Fill;
@@ -48,7 +48,8 @@ namespace delivered.Forms
             MainForm.MainPanel.Controls.Add(form3);
             form3.Show();
         }
-        private void button4_Click(object sender, EventArgs e)
+
+        private void button4_Click_1(object sender, EventArgs e)
         {
             Form4 form4 = new Form4();
             form4.Dock = DockStyle.Fill;
