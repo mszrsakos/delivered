@@ -53,7 +53,6 @@
             // 
             // button4
             // 
-            this.button4.BackgroundImage = global::delivered.Properties.Resources._167901;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(492, 12);
@@ -65,7 +64,6 @@
             // 
             // button3
             // 
-            this.button3.BackgroundImage = global::delivered.Properties.Resources._3345358;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(403, 12);
@@ -77,7 +75,6 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::delivered.Properties.Resources._919326;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(225, 12);
@@ -89,7 +86,6 @@
             // 
             // button2
             // 
-            this.button2.BackgroundImage = global::delivered.Properties.Resources._7695937;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(314, 12);
