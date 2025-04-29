@@ -67,5 +67,10 @@ namespace delivered.Forms
             MainForm.MainPanel.Controls.Add(form5);
             form5.Show();
         }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
