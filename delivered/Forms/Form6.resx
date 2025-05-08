@@ -117,42 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="cipo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cipo2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cipo11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cipo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ruha" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\ruha.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trend1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\trend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-
-  <data name="cipo31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cipo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trend" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\trend.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cipok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cipok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cipo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cipo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ekszerek" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\ekszerek.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cipo21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cipo2.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cipo32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cipo3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cipo12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bin\Debug\cipo1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

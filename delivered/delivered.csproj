@@ -76,6 +76,12 @@
     <Compile Include="Forms\Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -126,18 +135,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="bin\Debug\919326.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\3345358.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\7695937.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="bin\Debug\167901.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="bin\Debug\cipok.png" />
   </ItemGroup>
   <ItemGroup>
@@ -148,6 +145,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="bin\Debug\ekszerek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\cipo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\cipo2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
