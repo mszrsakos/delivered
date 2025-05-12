@@ -72,5 +72,15 @@ namespace delivered.Forms
             MainForm.MainPanel.Controls.Add(form5);
             form5.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Form6 form6 = new Form6();
+            form6.Dock = DockStyle.Fill;
+            form6.TopLevel = false;
+            MainForm.MainPanel.Controls.Clear();
+            MainForm.MainPanel.Controls.Add(form6);
+            form6.Show();
+        }
     }
 }

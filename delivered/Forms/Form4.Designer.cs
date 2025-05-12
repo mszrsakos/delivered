@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +51,54 @@
             this.panel2.Size = new System.Drawing.Size(984, 91);
             this.panel2.TabIndex = 0;
             // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::delivered.Properties.Resources.ruha;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(409, 12);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(83, 69);
+            this.button5.TabIndex = 11;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackgroundImage = global::delivered.Properties.Resources.trend1;
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Location = new System.Drawing.Point(587, 12);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(83, 69);
+            this.button6.TabIndex = 9;
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = global::delivered.Properties.Resources.cipok;
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Location = new System.Drawing.Point(320, 12);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(83, 69);
+            this.button7.TabIndex = 8;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = global::delivered.Properties.Resources.ekszerek;
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Location = new System.Drawing.Point(498, 12);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(83, 69);
+            this.button8.TabIndex = 10;
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -60,50 +108,6 @@
             this.label1.Size = new System.Drawing.Size(102, 23);
             this.label1.TabIndex = 6;
             this.label1.Text = "delivered";
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = global::delivered.Properties.Resources.ruha;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Location = new System.Drawing.Point(406, 11);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(83, 69);
-            this.button5.TabIndex = 11;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.BackgroundImage = global::delivered.Properties.Resources.trend1;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Location = new System.Drawing.Point(584, 11);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(83, 69);
-            this.button6.TabIndex = 9;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = global::delivered.Properties.Resources.cipok;
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Location = new System.Drawing.Point(317, 11);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(83, 69);
-            this.button7.TabIndex = 8;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.BackgroundImage = global::delivered.Properties.Resources.ekszerek;
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Location = new System.Drawing.Point(495, 11);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(83, 69);
-            this.button8.TabIndex = 10;
-            this.button8.UseVisualStyleBackColor = true;
             // 
             // Form4
             // 

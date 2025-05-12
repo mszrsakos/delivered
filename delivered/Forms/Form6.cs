@@ -12,9 +12,72 @@ namespace delivered.Forms
 {
     public partial class Form6 : Form
     {
+        private int timeLeft; // time left in seconds
+        private const int countdownTime = 5*60; // 5 minutes in seconds
         public Form6()
         {
             InitializeComponent();
+            timeLeft = countdownTime;
+            timer1.Interval = 1000; // 1 second
+            //timer1.Tick += timer1_Tick;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(colorDialog1.ShowDialog()==DialogResult.OK)
+            {
+                Color color = colorDialog1.Color;
+                panel2.BackColor = color;
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (timeLeft > 0)
+            {
+                timeLeft--;
+                UpdateLabel();
+            }
+            else
+            {
+                timer1.Stop();
+                MessageBox.Show("Lejárt az idő! A rendelést újra kell kezdened!");
+                Application.Restart();
+            }
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+            UpdateLabel();
+            timer1.Start(); // Start countdown immediately on form load
+        }
+
+        private void UpdateLabel()
+        {
+            TimeSpan timeSpan = TimeSpan.FromSeconds(timeLeft);
+            label9.Text = timeSpan.ToString(@"mm\:ss"); // show mm:ss format
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text=="")
+            {
+                MessageBox.Show($"Nem adtad meg a teljes nevedet! Kérlek írd be");
+            }
+            else if(textBox2.Text == "")
+            {
+                MessageBox.Show($"Nem adtad meg a lakcímedet! Kérlek írd be");
+            }
+            else if (textBox3.Text == "")
+            {
+                MessageBox.Show($"Nem adtad meg a telefonszámodat! Kérlek írd be");
+            }
+
+            if(comboBox1.SelectedIndex==-1)
+            {
+                MessageBox.Show("Válassz cipőméretet!");
+            }
+
         }
     }
 }
