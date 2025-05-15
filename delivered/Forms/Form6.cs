@@ -77,7 +77,37 @@ namespace delivered.Forms
             {
                 MessageBox.Show("Válassz cipőméretet!");
             }
+            if(listBox1.Items.Contains(" "))
+            {
+                MessageBox.Show($"Kérlek add hozzá a listához mielőtt leadod a rendelést");
 
+            }
+            
+
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            bool button3_Click = true;
+            if(radioButton1.Checked)
+            {
+                listBox1.Items.Add(radioButton1);
+            }
+            else if(radioButton2.Checked)
+            {
+                listBox1.Items.Add(radioButton2);
+            }
+            else if(!radioButton3.Checked) {
+            {
+                listBox1.Items.Add(radioButton3);
+
+            }
+            else 
+            {
+                    
+            }
+                    listBox1.Items.Add(comboBox1.SelectedItem + " " + textBox1.Text + " " + textBox2.Text + " " + textBox3.Text);
         }
     }
 }
