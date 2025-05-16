@@ -68,7 +68,7 @@ namespace delivered.Forms
             {
                 MessageBox.Show($"Nem adtad meg a lakcímedet! Kérlek írd be");
             }
-            else if (textBox3.Text == "")
+            else if (numericUpDown1.Text=="")
             {
                 MessageBox.Show($"Nem adtad meg a telefonszámodat! Kérlek írd be");
             }
@@ -77,9 +77,9 @@ namespace delivered.Forms
             {
                 MessageBox.Show("Válassz cipőméretet!");
             }
-            if(listBox1.Items.Contains(" "))
+            if(listBox1.Items.Count==0)
             {
-                MessageBox.Show($"Kérlek add hozzá a listához mielőtt leadod a rendelést");
+                MessageBox.Show($"Kérlek add hozzá a cipőt a listához mielőtt leadod a rendelést") ;
 
             }
             
@@ -89,7 +89,7 @@ namespace delivered.Forms
 
         private void button3_Click(object sender, EventArgs e)
         {
-            bool button3_Click = true;
+
             if(radioButton1.Checked)
             {
                 listBox1.Items.Add(radioButton1);
@@ -98,16 +98,16 @@ namespace delivered.Forms
             {
                 listBox1.Items.Add(radioButton2);
             }
-            else if(!radioButton3.Checked) {
+            else if(!radioButton3.Checked) 
             {
                 listBox1.Items.Add(radioButton3);
 
             }
             else 
             {
-                    
+                listBox1.Items.Add(comboBox1.SelectedItem + " " + textBox1.Text + " " + textBox2.Text + " " + numericUpDown1.Value);
             }
-                    listBox1.Items.Add(comboBox1.SelectedItem + " " + textBox1.Text + " " + textBox2.Text + " " + textBox3.Text);
+                    
         }
     }
 }
