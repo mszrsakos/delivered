@@ -56,6 +56,8 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -242,21 +244,22 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(374, 354);
+            this.label6.Location = new System.Drawing.Point(334, 354);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 13);
+            this.label6.Size = new System.Drawing.Size(110, 13);
             this.label6.TabIndex = 19;
-            this.label6.Text = "Telefonszám:";
+            this.label6.Text = "Telefonszám(9 jegyű):";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.Location = new System.Drawing.Point(699, 117);
+            this.label7.Location = new System.Drawing.Point(743, 117);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(178, 32);
+            this.label7.Size = new System.Drawing.Size(112, 32);
             this.label7.TabIndex = 20;
-            this.label7.Text = "Ár: 220.000Ft";
+            this.label7.Text = "220.000";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // timer1
             // 
@@ -284,7 +287,7 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(711, 351);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(205, 121);
+            this.listBox1.Size = new System.Drawing.Size(258, 121);
             this.listBox1.TabIndex = 23;
             // 
             // button3
@@ -301,19 +304,41 @@
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(466, 352);
             this.numericUpDown1.Maximum = new decimal(new int[] {
-            -1530494976,
-            232830,
+            999999999,
+            0,
             0,
             0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(141, 20);
             this.numericUpDown1.TabIndex = 25;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.Location = new System.Drawing.Point(847, 117);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(35, 32);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "Ft";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label11.Location = new System.Drawing.Point(699, 117);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(51, 32);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "Ár:";
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.listBox1);
@@ -378,5 +403,7 @@
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }

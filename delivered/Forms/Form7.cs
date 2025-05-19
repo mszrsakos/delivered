@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace delivered.Forms
 {
-    public partial class Form6 : Form
+    public partial class Form7 : Form
     {
         private int timeLeft; // time left in seconds
-        private const int countdownTime = 5*60; // 5 minutes in seconds
+        private const int countdownTime = 5 * 60; // 5 minutes in seconds
         public string szallitas = "";
-        public Form6()
+        public Form7()
         {
             InitializeComponent();
             timeLeft = countdownTime;
@@ -23,11 +23,9 @@ namespace delivered.Forms
             //timer1.Tick += timer1_Tick;
         }
 
-
-
         private void button1_Click(object sender, EventArgs e)
         {
-            if(colorDialog1.ShowDialog()==DialogResult.OK)
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
                 Color color = colorDialog1.Color;
                 panel2.BackColor = color;
@@ -49,49 +47,46 @@ namespace delivered.Forms
             }
         }
 
-        private void Form6_Load(object sender, EventArgs e)
-        {
-            UpdateLabel();
-            timer1.Start(); // Start countdown immediately on form load
-        }
-
         private void UpdateLabel()
         {
             TimeSpan timeSpan = TimeSpan.FromSeconds(timeLeft);
             label9.Text = timeSpan.ToString(@"mm\:ss"); // show mm:ss format
         }
 
+        private void Form7_Load(object sender, EventArgs e)
+        {
+            UpdateLabel();
+            timer1.Start(); // Start countdown immediately on form load
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text=="")
+            if (textBox1.Text == "")
             {
                 MessageBox.Show($"Nem adtad meg a teljes nevedet! Kérlek írd be");
             }
-            else if(textBox2.Text == "")
+            else if (textBox2.Text == "")
             {
                 MessageBox.Show($"Nem adtad meg a lakcímedet! Kérlek írd be");
             }
-            else if (numericUpDown1.Value<100000000 && numericUpDown1.Value>1000000000)
+            else if (numericUpDown1.Value < 100000000 && numericUpDown1.Value > 1000000000)
             {
                 MessageBox.Show($"Nem adtad meg a telefonszámodat! Kérlek írd be");
             }
 
-            if(comboBox1.SelectedIndex==-1)
+            if (comboBox1.SelectedIndex == -1)
             {
                 MessageBox.Show("Válassz cipőméretet!");
             }
-            if(listBox1.Items.Count==0)
+            if (listBox1.Items.Count == 0)
             {
-                MessageBox.Show($"Kérlek add hozzá a cipőt a listához mielőtt leadod a rendelést") ;
+                MessageBox.Show($"Kérlek add hozzá a cipőt a listához mielőtt leadod a rendelést");
 
             }
-            if(szallitas=="")
+            if (szallitas == "")
             {
                 MessageBox.Show("Kérlek válassz ki egy szállítási módot");
             }
-            
-
-
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -99,23 +94,23 @@ namespace delivered.Forms
             listBox1.Items.Clear();
             int hazhoz = 1800;
             int csomagP = 800;
-            
-            if(radioButton1.Checked)
+
+            if (radioButton1.Checked)
             {
                 szallitas = "Házhozszállítás";
                 listBox1.Items.Add("Teljes név:" + " " + textBox1.Text);
-                listBox1.Items.Add("Lakcím:"+ " " + textBox2.Text);
+                listBox1.Items.Add("Lakcím:" + " " + textBox2.Text);
                 listBox1.Items.Add("Telefonszám:" + " " + numericUpDown1.Value);
                 listBox1.Items.Add("Cipő mérete:" + " " + comboBox1.SelectedItem.ToString());
                 listBox1.Items.Add("Cipő színe:" + " " + colorDialog1.Color);
                 listBox1.Items.Add("Szállítási mód:" + " " + szallitas);
 
-                
-                
+
+
             }
-            else if(radioButton2.Checked)
+            else if (radioButton2.Checked)
             {
-                szallitas="Csomagpont";
+                szallitas = "Csomagpont";
                 listBox1.Items.Add("Teljes név:" + " " + textBox1.Text);
                 listBox1.Items.Add("Lakcím:" + " " + textBox2.Text);
                 listBox1.Items.Add("Telefonszám:" + " " + numericUpDown1.Value);
@@ -123,10 +118,10 @@ namespace delivered.Forms
                 listBox1.Items.Add("Cipő színe:" + " " + colorDialog1.Color);
                 listBox1.Items.Add("Szállítási mód:" + " " + szallitas);
             }
-            else if(radioButton3.Checked) 
+            else if (radioButton3.Checked)
 
             {
-                szallitas+="Személyes átvétel";
+                szallitas += "Személyes átvétel";
                 listBox1.Items.Add("Teljes név:" + " " + textBox1.Text);
                 listBox1.Items.Add("Lakcím:" + " " + textBox2.Text);
                 listBox1.Items.Add("Telefonszám:" + " " + numericUpDown1.Value);
@@ -134,16 +129,10 @@ namespace delivered.Forms
                 listBox1.Items.Add("Cipő színe:" + " " + colorDialog1.Color);
                 listBox1.Items.Add("Szállítási mód:" + " " + szallitas);
             }
-            else 
+            else
             {
                 MessageBox.Show($"Nem választottál ki szállítási módot! Válassz egyet ki kérlek");
             }
-                    
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
