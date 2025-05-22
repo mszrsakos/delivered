@@ -60,12 +60,7 @@ namespace delivered.Forms
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Form5 form5 = new Form5();
-            form5.Dock = DockStyle.Fill;
-            form5.TopLevel = false;
-            MainForm.MainPanel.Controls.Clear();
-            MainForm.MainPanel.Controls.Add(form5);
-            form5.Show();
+            
         }
 
         private void Form4_Load(object sender, EventArgs e)
@@ -111,6 +106,16 @@ namespace delivered.Forms
             MainForm.MainPanel.Controls.Clear();
             MainForm.MainPanel.Controls.Add(form1);
             form1.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Form5 form5 = new Form5();
+            form5.Dock = DockStyle.Fill;
+            form5.TopLevel = false;
+            MainForm.MainPanel.Controls.Clear();
+            MainForm.MainPanel.Controls.Add(form5);
+            form5.Show();
         }
     }
 }

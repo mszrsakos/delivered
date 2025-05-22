@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
@@ -75,7 +76,7 @@
             // 
             // button5
             // 
-            this.button5.BackgroundImage = global::delivered.Properties.Resources.ruha;
+            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Location = new System.Drawing.Point(409, 12);
@@ -98,7 +99,7 @@
             // 
             // button6
             // 
-            this.button6.BackgroundImage = global::delivered.Properties.Resources.trend1;
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Location = new System.Drawing.Point(587, 12);
@@ -110,7 +111,7 @@
             // 
             // button7
             // 
-            this.button7.BackgroundImage = global::delivered.Properties.Resources.cipok;
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Location = new System.Drawing.Point(320, 12);
@@ -122,7 +123,7 @@
             // 
             // button8
             // 
-            this.button8.BackgroundImage = global::delivered.Properties.Resources.ekszerek;
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Location = new System.Drawing.Point(498, 12);
@@ -134,7 +135,6 @@
             // 
             // button2
             // 
-            this.button2.BackgroundImage = global::delivered.Properties.Resources.ruha;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(409, 12);
@@ -155,7 +155,6 @@
             // 
             // button4
             // 
-            this.button4.BackgroundImage = global::delivered.Properties.Resources.trend1;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Location = new System.Drawing.Point(587, 12);
@@ -166,7 +165,6 @@
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::delivered.Properties.Resources.cipok;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(320, 12);
@@ -177,7 +175,6 @@
             // 
             // button3
             // 
-            this.button3.BackgroundImage = global::delivered.Properties.Resources.ekszerek;
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Location = new System.Drawing.Point(498, 12);

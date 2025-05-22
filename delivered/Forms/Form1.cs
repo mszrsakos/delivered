@@ -92,5 +92,25 @@ namespace delivered.Forms
             MainForm.MainPanel.Controls.Add(form7);
             form7.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Form8 form8 = new Form8();
+            form8.Dock = DockStyle.Fill;
+            form8.TopLevel = false;
+            MainForm.MainPanel.Controls.Clear();
+            MainForm.MainPanel.Controls.Add(form8);
+            form8.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form9 form9 = new Form9();
+            form9.Dock = DockStyle.Fill;
+            form9.TopLevel = false;
+            MainForm.MainPanel.Controls.Clear();
+            MainForm.MainPanel.Controls.Add(form9);
+            form9.Show();
+        }
     }
 }

@@ -145,5 +145,15 @@ namespace delivered.Forms
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Dock = DockStyle.Fill;
+            form1.TopLevel = false;
+            MainForm.MainPanel.Controls.Clear();
+            MainForm.MainPanel.Controls.Add(form1);
+            form1.Show();
+        }
     }
 }

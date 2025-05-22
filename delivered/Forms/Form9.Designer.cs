@@ -1,6 +1,6 @@
 ﻿namespace delivered.Forms
 {
-    partial class Form7
+    partial class Form9
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form7));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form9));
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
@@ -43,6 +43,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -52,10 +55,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.button1 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -73,7 +73,7 @@
             this.label11.Location = new System.Drawing.Point(702, 117);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(51, 32);
-            this.label11.TabIndex = 49;
+            this.label11.TabIndex = 71;
             this.label11.Text = "Ár:";
             // 
             // label10
@@ -83,7 +83,7 @@
             this.label10.Location = new System.Drawing.Point(850, 117);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(35, 32);
-            this.label10.TabIndex = 48;
+            this.label10.TabIndex = 70;
             this.label10.Text = "Ft";
             // 
             // numericUpDown1
@@ -96,18 +96,16 @@
             0});
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(141, 20);
-            this.numericUpDown1.TabIndex = 47;
-            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.numericUpDown1.TabIndex = 69;
             // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(542, 420);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(141, 52);
-            this.button3.TabIndex = 46;
+            this.button3.TabIndex = 68;
             this.button3.Text = "Hozzáadás a listához";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // listBox1
             // 
@@ -115,8 +113,7 @@
             this.listBox1.Location = new System.Drawing.Point(714, 351);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(258, 121);
-            this.listBox1.TabIndex = 45;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox1.TabIndex = 67;
             // 
             // label9
             // 
@@ -124,7 +121,7 @@
             this.label9.Location = new System.Drawing.Point(805, 162);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(0, 13);
-            this.label9.TabIndex = 44;
+            this.label9.TabIndex = 66;
             // 
             // label8
             // 
@@ -132,9 +129,8 @@
             this.label8.Location = new System.Drawing.Point(705, 162);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 13);
-            this.label8.TabIndex = 43;
+            this.label8.TabIndex = 65;
             this.label8.Text = "Ennyi időd maradt:";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -143,9 +139,8 @@
             this.label7.Location = new System.Drawing.Point(746, 117);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(112, 32);
-            this.label7.TabIndex = 42;
-            this.label7.Text = "350.000";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.label7.TabIndex = 64;
+            this.label7.Text = "235.000";
             // 
             // label6
             // 
@@ -153,9 +148,8 @@
             this.label6.Location = new System.Drawing.Point(337, 354);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 13);
-            this.label6.TabIndex = 41;
+            this.label6.TabIndex = 63;
             this.label6.Text = "Telefonszám(9 jegyű):";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label5
             // 
@@ -163,9 +157,8 @@
             this.label5.Location = new System.Drawing.Point(401, 311);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 13);
-            this.label5.TabIndex = 40;
+            this.label5.TabIndex = 62;
             this.label5.Text = "Lakcím:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -173,25 +166,32 @@
             this.label4.Location = new System.Drawing.Point(388, 264);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(59, 13);
-            this.label4.TabIndex = 39;
+            this.label4.TabIndex = 61;
             this.label4.Text = "Teljes név:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(469, 308);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(141, 20);
-            this.textBox2.TabIndex = 38;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.TabIndex = 60;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(469, 261);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(141, 20);
-            this.textBox1.TabIndex = 37;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.TabIndex = 59;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.Location = new System.Drawing.Point(445, 34);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 23);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "delivered";
             // 
             // groupBox1
             // 
@@ -201,10 +201,9 @@
             this.groupBox1.Location = new System.Drawing.Point(708, 196);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(158, 142);
-            this.groupBox1.TabIndex = 36;
+            this.groupBox1.TabIndex = 58;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Szállítási módok";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // radioButton3
             // 
@@ -244,10 +243,9 @@
             this.button2.Location = new System.Drawing.Point(380, 420);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(141, 52);
-            this.button2.TabIndex = 35;
+            this.button2.TabIndex = 57;
             this.button2.Text = "Rendelés";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label3
             // 
@@ -255,7 +253,7 @@
             this.label3.Location = new System.Drawing.Point(466, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 13);
-            this.label3.TabIndex = 34;
+            this.label3.TabIndex = 56;
             this.label3.Text = "Kiválasztott szín:";
             // 
             // panel2
@@ -264,8 +262,7 @@
             this.panel2.Location = new System.Drawing.Point(469, 196);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(51, 37);
-            this.panel2.TabIndex = 33;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.panel2.TabIndex = 55;
             // 
             // comboBox1
             // 
@@ -289,8 +286,7 @@
             this.comboBox1.Location = new System.Drawing.Point(379, 133);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(51, 21);
-            this.comboBox1.TabIndex = 32;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.TabIndex = 54;
             // 
             // label1
             // 
@@ -298,7 +294,7 @@
             this.label1.Location = new System.Drawing.Point(376, 117);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 31;
+            this.label1.TabIndex = 53;
             this.label1.Text = "Cipőméret:";
             // 
             // button1
@@ -306,24 +302,9 @@
             this.button1.Location = new System.Drawing.Point(379, 196);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 37);
-            this.button1.TabIndex = 29;
+            this.button1.TabIndex = 51;
             this.button1.Text = "Válassz színt!";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(445, 34);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(102, 23);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "delivered";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // panel1
             // 
@@ -333,8 +314,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1000, 91);
-            this.panel1.TabIndex = 28;
+            this.panel1.Size = new System.Drawing.Size(984, 91);
+            this.panel1.TabIndex = 50;
             // 
             // pictureBox1
             // 
@@ -343,9 +324,8 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(240, 355);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabIndex = 52;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
@@ -354,15 +334,15 @@
             this.pictureBox2.Location = new System.Drawing.Point(39, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(64, 55);
-            this.pictureBox2.TabIndex = 50;
+            this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // Form7
+            // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 600);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.numericUpDown1);
@@ -382,13 +362,13 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form7";
-            this.Text = "Form7";
-            this.Load += new System.EventHandler(this.Form7_Load);
+            this.Name = "Form9";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form9";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -416,6 +396,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
@@ -425,12 +408,9 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.ColorDialog colorDialog1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
